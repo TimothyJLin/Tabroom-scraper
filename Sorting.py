@@ -88,7 +88,7 @@ def sortIntoAlphabetFile():
             fZ.write(line)
         else:
             fMisc.write(line)
-sortIntoAlphabetFile()
+#sortIntoAlphabetFile()
 
 def sortFile(fileName):
     f=open(fileName, "r")
@@ -96,10 +96,23 @@ def sortFile(fileName):
     for line in f.readlines():
         sortArray.append(line)
     f.close()
+    f=open(fileName, "w")
     sortArray.sort()
-    f2=open("sortedDataScraped.txt", "a")
+    #f2=open("sortedDataScraped.txt", "a")
     for i in sortArray:
-        f2.write(i)
+        f.write(i)
     f.close()
 
-#sortFile("test.txt")
+#sortFile("scrapedData/Z_name.txt")
+
+def sortIntoSQLFormat():
+    f=open('test.txt', 'r')
+    f2=open('test3.txt', 'a')
+    for line in f.readlines():
+        newline=line.replace("name:", "#")
+        newline=newline.replace("|school:", "#")
+        newline=newline.replace("|url:", "#")
+        f2.write(newline)
+    f.close()
+    f2.close()
+sortIntoSQLFormat()

@@ -1,7 +1,21 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css">
-    
+    <script>
+      function ajaxcall() {
+        //TEST
+        var data=new FormData();
+        data.append("name", document.getElementById("name").value);
+        var xhr=new XMLHttpRequest();
+        xhr.open("POST", "dummy.php");
+        xhr.onload=function() {
+          console.log("ajax loaded");
+        };
+        xhr.send(data);
+        return;
+      };
+      
+    </script>
   </head>
   <body>
     <div class="topBorder">
@@ -9,33 +23,35 @@
         LD Tabroom Record Finder
       </p>
     </div>
-
+    
     <div class="bottomBorder clear">
       <h1 class="right-buffer">Contact me:</h1>
       <div class="topOfBottomBanner">
         <h2 class="right-buffer">Email: timothylin6@gmail.com</h2> 
         
-        <h2 class="right-align"><a href="www.google.com">Code can be found here, on Github</a></h2>
+        <h2 class="right-align"><a href="https://github.com/TimothyJLin/Tabroom-scraper">Code can be found here, on Github</a></h2>
       </div>
       <h2 class="leftAlign right-buffer"><a href="https://www.instagram.com/chancellorvarus">Instagram: @ChancellorVarus</a></h2>
       
-        
-
+      
     </div>
     
     <h1>
-  
-      <form action="submit.html">
+      
+      <form onsubmit="return ajaxcall()">
         <div class="centeralign firstDiv">
-        <p>Search competitor by name</p>
+          <p>Search competitor by name</p>
           <input type="text" id="name" class="textbox"></input>
         </div>
         <p class="centeralign">OR</p>
         <div class="centeralign secondDiv">
-        <p>Search competitor by school</p>
+          <p>Search competitor by school</p>
           <input type="text" id="name" class="textbox"></input>
         </div>
+        
+        <div class="centeralign"><button class="bluebutton">Search user</button></div>
+        
       </form>
     </h1>
   </body>
-</html>
+  </html>

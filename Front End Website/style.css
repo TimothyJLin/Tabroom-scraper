@@ -6,14 +6,22 @@ body {
     clear: both;
   }
   .firstDiv {
-    margin-top:4%;
-    margin-bottom:4%
+    margin-top:3%;
+    margin-bottom:3%
   }
   
   .secondDiv {
-    margin-top:4%;
+    margin-top:3%;
   }
 
+  .bluebutton {
+    background-color: rgb(26, 75, 165);
+    color: white;
+    margin-top: 4%;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+  }
 
   p {
     text-align:center;
@@ -22,6 +30,7 @@ body {
   
   .right-buffer {
     margin-right: 15px;
+    margin-bottom: 5px;
   }
 
   input {
@@ -38,6 +47,7 @@ body {
 
   .left-align {
     text-align: left;
+    
   }
 
 
@@ -61,7 +71,7 @@ body {
   .bottomBorder {
     margin:0px;  
     padding: 0px 2px 2px 3px;    
-    height: 30%;
+    height: 25%;
     width: 100%;
     background-color: CornflowerBlue;
     position: absolute; bottom: 0
