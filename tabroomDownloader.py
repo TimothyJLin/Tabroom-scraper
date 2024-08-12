@@ -5,7 +5,7 @@ import requests
 def start():
     updatedURL=""
     url="https://www.tabroom.com/index/results/team_results.mhtml?id1=1"
-    for i in range (1516497, 1516497):
+    for i in range (1, 1516497):
         #check if user exists
         #i=1143532
         updatedURL="https://www.tabroom.com/index/results/team_results.mhtml?id1="+str(i)
