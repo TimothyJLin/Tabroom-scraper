@@ -7,7 +7,7 @@
         var data=new FormData();
         data.append("name", document.getElementById("name").value);
         var xhr=new XMLHttpRequest();
-        xhr.open("GET", "dummy.php");
+        xhr.open("POST", "dummy.php");
         xhr.onload=function() {
           console.log("ajax loaded");
         };
