@@ -11,8 +11,8 @@
         xhr.onload=function() {
           console.log("ajax loaded");
         };
-        xhr.send(data);
-        return;
+        xhr.send("<SQL query>"+data);
+        return false;
       };
       
     </script>
