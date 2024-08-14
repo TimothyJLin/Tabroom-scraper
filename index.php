@@ -1,6 +1,7 @@
 <?php
 
-$uri = ${AIVEN_SERVICE_URL};
+
+$uri = getenv('AIVEN_SERVICE_URL');
 
 $fields = parse_url($uri);
 
