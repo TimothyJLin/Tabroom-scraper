@@ -13,6 +13,7 @@ $conn .= ";dbname=defaultdb";
 $conn .= ";sslmode=verify-ca;sslrootcert='D:/absolute/path/to/ssl/certs/ca.pem'";
 
 try {
+    
     $db = new PDO($conn, $fields["user"], $fields["pass"]);
 
     $stmt = $db->query("SELECT VERSION()");
