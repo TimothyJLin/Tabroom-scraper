@@ -8,7 +8,7 @@ $fields = parse_url($uri);
 // build the DSN including SSL settings
 $conn = "mysql:";
 $conn .= "host=" . $fields["host"];
-$conn .= ";port=" . $fields["port"];;
+$conn .= ";port=" . $fields["port"];
 $conn .= ";dbname=defaultdb";
 $conn .= ";sslmode=verify-ca;sslrootcert='D:/absolute/path/to/ssl/certs/ca.pem'";
 
