@@ -7,5 +7,5 @@ $debaterInformation = array(
     'school' => 30,
     'url' => 'New York'
   );
-echo $debaterInformation;
+echo json_encode($debaterInformation);
 
