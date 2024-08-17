@@ -17,6 +17,9 @@
           var school = debaterInformation.school;
           var url = debaterInformation.url;
           console.log(name, age, url)
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+          console.error("AJAX Error:", textStatus, errorThrown); // Log details for debugging
         }
         });      
 
