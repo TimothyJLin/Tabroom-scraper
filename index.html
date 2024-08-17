@@ -11,7 +11,10 @@
         dataType: "json", 
         data: {name: 'some variable', school: 'some other variable'},
         success: function(data){
-          console.log(data);
+          var name = debaterInformation.name;
+          var school = debaterInformation.school;
+          var url = debaterInformation.url;
+          console.log(name, age, url)
         }
         });      
 
