@@ -5,12 +5,14 @@
 
     <script>
       function ajaxcall() {
+        console.log("ajax call successful"),
         $.ajax({
         type: "GET",
         url: 'dummy.php',
         dataType: "json", 
         data: {name: 'some variable', school: 'some other variable'},
         success: function(data){
+          console.log("inside success function");
           var name = debaterInformation.name;
           var school = debaterInformation.school;
           var url = debaterInformation.url;
