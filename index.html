@@ -2,9 +2,21 @@
   <head>
     <link rel="stylesheet" href="style.css">
     <script>
-      function formSubmittedTest() {
-        console.log("form submitted");
+      function ajaxCall() {
+        $.ajax({
+        type: "GET",
+        url: 'dummy.php',
+        data: {name: 'some variable', school: 'some other variable'},
+        success: function(data){
+          console.log(data);
+        }
+        });      
+
       }
+      //function formSubmittedTest() {
+       // console.log("form submitted");
+      //}
+      /**
       function ajaxcall() {
         //TEST
         var data=new FormData();
@@ -15,8 +27,10 @@
           console.log("ajax loaded");
         };
         xhr.send("<SQL query>"+data);
+          console.log(xhr)
         return false;
       };
+      **/
       
     </script>
   </head>
@@ -41,9 +55,9 @@
     
     <h1>
 <!--
+  <form onsubmit=formSubmittedTest()>
+  -->
       <form onsubmit="return ajaxcall()">
--->
-      <form onsubmit=formSubmittedTest()>
         <div class="centeralign firstDiv">
           <p>Search competitor by name</p>
           <input type="text" id="name" class="textbox"></input>
