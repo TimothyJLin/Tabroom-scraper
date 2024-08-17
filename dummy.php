@@ -1,5 +1,5 @@
 <?php
 //echo post
 $name=$_GET('name');
-$URLe=$_GET('url');
-echo $name;
+$URL=$_GET('url');
+echo json_encode($name);
