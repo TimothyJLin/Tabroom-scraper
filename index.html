@@ -2,6 +2,9 @@
   <head>
     <link rel="stylesheet" href="style.css">
     <script>
+      function formSubmittedTest() {
+        console.log("form submitted");
+      }
       function ajaxcall() {
         //TEST
         var data=new FormData();
@@ -37,8 +40,10 @@
     </div>
     
     <h1>
-      
+<!--
       <form onsubmit="return ajaxcall()">
+-->
+      <form onsubmit=formSubmittedTest()>
         <div class="centeralign firstDiv">
           <p>Search competitor by name</p>
           <input type="text" id="name" class="textbox"></input>
