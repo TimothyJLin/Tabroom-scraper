@@ -8,4 +8,4 @@ $debaterInformation = array(
     'url' => 'New York'
   );
 echo json_encode($debaterInformation);
-
+?>
