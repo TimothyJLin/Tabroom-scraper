@@ -14,9 +14,13 @@
         data: {name: "some variable", school: "some other variable"},
         success: function(data){
           console.log("inside success function");
-          var name = debaterInformation.name;
-          var school = debaterInformation.school;
-          var url = debaterInformation.url;
+          var response = JSON.parse(data); // Parse the received JSON data
+          var name = response.name;
+          var school = response.school;
+          var url = response.url;
+//          var name = debaterInformation.name;
+  //        var school = debaterInformation.school;
+    //      var url = debaterInformation.url;
           console.log(name, school, url);
         },
         error: function(jqXHR, textStatus, errorThrown) {
