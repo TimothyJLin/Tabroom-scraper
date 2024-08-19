@@ -9,6 +9,6 @@ $debaterInformation = array(
   );
 
 echo json_encode($debaterInformation);
-echo "<script>console.log('This will be logged to the console');</script>";
+//echo "<script>console.log('This will be logged to the console');</script>";
 
 
