@@ -1,7 +1,7 @@
 <?php
 //echo post
-$name=$_POST['name'];
-$URL=$_POST('url');
+$name=$_GET['name'];
+$URL=$_GET('url');
 $debaterInformation = array(
     'name' => 'John',
     'school' => 30,
