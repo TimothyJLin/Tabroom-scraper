@@ -13,8 +13,8 @@
         data: {name: "some variable", school: "some other variable"},
         success: function(data){
           console.log("inside success function");
+          console.log(data);
           var response = JSON.parse(data); // Parse the received JSON data
-          console.log(response);
           var name = response.name;
           var school = response.school;
           var url = response.url;
