@@ -14,7 +14,7 @@
         success: function(data){
           console.log("inside success function");
           var response = JSON.parse(data); // Parse the received JSON data
-          console.log(data);
+          console.log(response);
           var name = response.name;
           var school = response.school;
           var url = response.url;
