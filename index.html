@@ -9,12 +9,11 @@
         $.ajax({
         type: "GET",
         url: "./dummy.php",
-        //dataType: "json", 
-        dataType: "text",
+        dataType: "json", 
         data: {name: "some variable", school: "some other variable"},
         success: function(data){
           console.log("inside success function");
-          var response = data; // Parse the received JSON data
+          var response = JSON.parse(data); // Parse the received JSON data
           console.log(data);
           var name = response.name;
           var school = response.school;
