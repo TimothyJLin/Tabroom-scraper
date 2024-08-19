@@ -1,4 +1,7 @@
 <?php
+ $item1=$_GET['test'];
+echo $item1;
+/*
 //echo post
 $name=$_GET['name'];
 $URL=$_GET['url'];

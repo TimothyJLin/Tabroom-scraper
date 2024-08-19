@@ -10,18 +10,23 @@
         type: "GET",
         url: "./dummy.php",
         dataType: "text", 
-        data: {name: "some variable", school: "some other variable"},
+        data: {test: '1'},
+        //        data: {name: "some variable", school: "some other variable"},
         success: function(data){
-          console.log("inside success function");
-          console.log(data);
+          window.alert(data);
+
+//          console.log("inside success function");
+//          console.log(data);
           //var response = JSON.parse(data); // Parse the received JSON data
           //var name = response.name;
           //var school = response.school;
           //var url = response.url;
-          var name = debaterInformation.name;
-          var school = debaterInformation.school;
-          var url = debaterInformation.url;
-          console.log("BREAD SECURED");
+
+
+//          var name = debaterInformation.name;
+  //        var school = debaterInformation.school;
+    //      var url = debaterInformation.url;
+      //    console.log("BREAD SECURED");
         },
         error: function(jqXHR, textStatus, errorThrown) {
           console.error("AJAX Error:", textStatus, errorThrown); // Log details for debugging
