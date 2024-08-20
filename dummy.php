@@ -1,9 +1,9 @@
 <?php
 //header('Content-Type: application/json');
 header('Content-Type: text/plain');
- $item1=$_GET['test'];
-echo $item1.text();
-/*
+ //$item1=$_GET['test'];
+//echo $item1.text();
+
 //echo post
 $name=$_GET['name'];
 $URL=$_GET['url'];
