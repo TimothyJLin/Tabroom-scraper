@@ -12,10 +12,9 @@ $debaterInformation = array(
     'school' => 30,
     'url' => 'New York'
   );
-public function getDebaterInformation() {
-  echo $debaterInformation;
 
-}
+return $debaterInformation;
+
 //json_encode($debaterInformation);
 //echo "<script>console.log('This will be logged to the console');</script>";
 
