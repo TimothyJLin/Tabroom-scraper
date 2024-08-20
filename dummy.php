@@ -1,4 +1,6 @@
 <?php
+header('Content-Type: application/json');
+
  $item1=$_GET['test'];
 echo json_encode($item1.toString());
 /*
