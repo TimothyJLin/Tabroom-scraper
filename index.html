@@ -8,14 +8,14 @@
         console.log("ajax call successful"),
         $.ajax({
         type: "GET",
-        contentType: 'application/x-www-form-urlencoded',
+        //contentType: 'application/x-www-form-urlencoded',
         url: "./dummy.php",
-        dataType: "xml", 
+        dataType: "text", 
         //data: {test: '1'},
         data: {name: "some variable", school: "some other variable"},
         success: function(data){
-          var response=JSON.stringify(data);
-          window.alert(response);
+          
+          window.alert(data);
 
 //          console.log("inside success function");
 //          console.log(data);

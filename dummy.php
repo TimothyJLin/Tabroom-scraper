@@ -1,6 +1,6 @@
 <?php
-header('Content-Type: application/json');
-
+//header('Content-Type: application/json');
+header('Content-Type: text/plain');
  $item1=$_GET['test'];
 echo $item1.text();
 /*
