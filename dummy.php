@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 
  $item1=$_GET['test'];
-echo json_encode($item1);
+echo $item1.text();
 /*
 //echo post
 $name=$_GET['name'];
