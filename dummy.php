@@ -1,6 +1,6 @@
 <?php
  $item1=$_GET['test'];
-echo json_encode($item1);
+echo json_encode($item1.toString());
 /*
 //echo post
 $name=$_GET['name'];
