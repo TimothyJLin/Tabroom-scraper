@@ -1,6 +1,7 @@
 <?php
-//header('Content-Type: application/json');
-header('Content-Type: text/plain');
+header('Content-Type: application/json');
+
+//header('Content-Type: text/plain');
  //$item1=$_GET['test'];
 //echo $item1.text();
 
@@ -13,7 +14,7 @@ $debaterInformation = array(
     'url' => 'New York'
   );
 
-echo $debaterInformation;
+echo json_encode($debaterInformation);
 //json_encode($debaterInformation);
 //echo "<script>console.log('This will be logged to the console');</script>";
 

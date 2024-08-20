@@ -8,14 +8,14 @@
         console.log("ajax call successful"),
         $.ajax({
         type: "GET",
-        contentType: 'text/plain',
+        contentType: 'application/json',
         url: "./dummy.php",
-        dataType: "text", 
+        dataType: "json", 
         //data: {test: '1'},
         data: {name: "some variable", school: "some other variable"},
         success: function(data){
           
-          window.alert($('debaterInformation').name.text(data));
+          window.alert($('debaterInformation').text(data));
 
 //          console.log("inside success function");
 //          console.log(data);
