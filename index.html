@@ -8,6 +8,7 @@
         console.log("ajax call successful"),
         $.ajax({
         type: "GET",
+        contentType: 'application/x-www-form-urlencoded',
         url: "./dummy.php",
         dataType: "json", 
         //data: {test: '1'},
