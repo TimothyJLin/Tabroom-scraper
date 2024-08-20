@@ -8,9 +8,9 @@
         console.log("ajax call successful"),
         $.ajax({
         type: "GET",
-        contentType: 'application/json',
+        contentType: 'text/plain',
         url: "./dummy.php",
-        dataType: "json", 
+        dataType: "text", 
         //data: {test: '1'},
         data: {name: "some variable", school: "some other variable"},
         success: function(data){
