@@ -13,7 +13,8 @@
         //data: {test: '1'},
         data: {name: "some variable", school: "some other variable"},
         success: function(data){
-          window.alert(data);
+          var response=JSON.parse(data);
+          window.alert(response);
 
 //          console.log("inside success function");
 //          console.log(data);
