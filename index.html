@@ -14,7 +14,7 @@
         //data: {test: '1'},
         data: {name: "some variable", school: "some other variable"},
         success: function(data){
-          var response=JSON.parse(data);
+          var response=JSON.stringify(data);
           window.alert(response);
 
 //          console.log("inside success function");
