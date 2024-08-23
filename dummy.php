@@ -13,8 +13,8 @@ $debaterInformation = array(
     'url' => 'New York'
   );
 
-//echo $debaterInformation;
-echo 'test';
+echo $debaterInformation;
+//echo 'test';
 exit;
 //json_encode($debaterInformation);
 //echo "<script>console.log('This will be logged to the console');</script>";
