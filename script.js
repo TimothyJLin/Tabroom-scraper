@@ -10,3 +10,4 @@ con.connect(function(err) {
   if (err) throw err;
   console.log("Connected!");
 });
+///  con.query("SELECT * FROM customers", function (err, result, fields) {
