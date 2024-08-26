@@ -11,9 +11,9 @@
         console.log("ajax call successful"),
         $.ajax({
         type: "GET",
-        contentType: 'text/plain',
-        url: "./dummy.php",
-        dataType: "text", 
+        //contentType: 'text/plain',
+        url: "./sqlBackend.py",
+        //dataType: "text", 
         //data: {test: '1'},
         data: {name: "some variable", school: "some other variable"},
         success: function(data){
