@@ -2,7 +2,7 @@ import mysql.connector
 mydb = mysql.connector.connect(
   host="mysql-project1-records-of-debaters.g.aivencloud.com",
   user="avnadmin",
-  password=environ['password'],
+  password=process.env.['password'],
   database="defaultdb",
   port=21468,
 #environ['password'].
