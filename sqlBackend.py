@@ -1,10 +1,10 @@
 import mysql.connector
 mydb = mysql.connector.connect(
-  host="mysql-project1-records-of-debaters.g.aivencloud.com",
-  user="avnadmin",
+  host=process.env.['host'],
+  user=process.env.['user'],
   password=process.env.['password'],
-  database="defaultdb",
-  port=21468,
+  database=process.env.['database'],
+  port=process.env.['port'],
 #environ['password'].
 )
 mycursor = mydb.cursor()
